@@ -50,7 +50,7 @@
        #~(begin
            (use-modules (guix build utils))
            (let ((inputs (list
-                          #+go-1.23
+                          #+go
                           #+tar
                           #+bzip2
                           #+gzip)))
@@ -119,7 +119,7 @@
          #:phases
          (modify-phases %standard-phases
            (delete 'check))
-         #:go ,go-1.23))
+         #:go ,go))
       (home-page "https://tailscale.com")
       (synopsis "Tailscale client")
       (description "Tailscale client")
